@@ -1,0 +1,11 @@
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster.csproj.AssemblyReference.cache
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster_MarkupCompile.cache
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster.g.resources
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster.AssemblyInfoInputs.cache
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster.AssemblyInfo.cs
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster.csproj.CoreCompileInputs.cache
+C:\Users\bdtec\ModbusMaster\obj\Debug\net9.0-windows\ModbusMaster_Content.g.cs

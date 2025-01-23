@@ -1,0 +1,49 @@
+﻿<Window x:Class="ModbusApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Modbus Master App" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Connection Section -->
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="IP Address:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox Name="IpAddressTextBox" Width="150" Text="127.0.0.1" Margin="0,0,10,0"/>
+            <TextBlock Text="Port:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox Name="PortTextBox" Width="60" Text="502" Margin="0,0,10,0"/>
+            <Button Content="Connect" Width="100" Click="ConnectButton_Click"/>
+        </StackPanel>
+
+        <!-- Modbus Data Section -->
+        <TabControl Grid.Row="1">
+            <!-- Coils Tab -->
+            <TabItem Header="Coils">
+                <StackPanel>
+                    <Button Name="ReadCoilsButton" Content="Read Coils" Width="100" Margin="0,0,0,10" Click="ReadCoilsButton_Click"/>
+                    <DataGrid Name="CoilGrid" AutoGenerateColumns="False" Height="200" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
+                            <DataGridCheckBoxColumn Header="Value" Binding="{Binding Value}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Holding Registers Tab -->
+            <TabItem Header="Holding Registers">
+                <StackPanel>
+                    <Button Content="Read Registers" Width="120" Margin="0,0,0,10" Click="ReadRegistersButton_Click"/>
+                    <DataGrid Name="RegisterGrid" AutoGenerateColumns="False" Height="200" Margin="0,10,0,0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
+                            <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
